@@ -52,6 +52,7 @@ const fct = (event) =>{
     answer4.innerText === chansonGood[i] ? answer4.classList.add("correct") : answer4.classList.add("wrong")
     image[i].classList.remove("blur")
     image[i].classList.add("noblur")
+    alert(`test 1 ${chansonGood[i]}`)
     if(y===i){
         if(perdu === 0 && bonneReponse(event.target.innerText) && y === i){
             alert("BONNE REPONSE !")
@@ -127,7 +128,7 @@ answer2.addEventListener('click', fct)
 answer3.addEventListener('click', fct)
 answer4.addEventListener('click', fct)
 
-answer1.addEventListener('touchstart', fct)
-answer2.addEventListener('touchstart', fct)
-answer3.addEventListener('touchstart', fct)
-answer4.addEventListener('touchstart', fct)
+answer1.addEventListener('touchend', fct)
+answer2.addEventListener('touchend', fct)
+answer3.addEventListener('touchend', fct)
+answer4.addEventListener('touchend', fct)
