@@ -126,3 +126,8 @@ answer1.addEventListener('click', fct)
 answer2.addEventListener('click', fct)
 answer3.addEventListener('click', fct)
 answer4.addEventListener('click', fct)
+
+answer1.addEventListener('touchend', fct)
+answer2.addEventListener('touchend', fct)
+answer3.addEventListener('touchend', fct)
+answer4.addEventListener('touchend', fct)
