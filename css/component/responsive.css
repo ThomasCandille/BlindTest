@@ -1,0 +1,43 @@
+@media screen and (max-width:425px){
+    
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.musicbox{
+    height: 40vh;
+    width: 75vw;
+}
+
+.choices{
+    height: 40vh;
+    width: 75vw;
+}
+
+.music{
+    height: 30vh;
+    width: 65vw;
+}
+
+.reponeses{
+    height: 30vh;
+    width: 65vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.questions{
+    height: 7vh;
+    width: 55vh;
+}
+
+.timer,.answer1,.answer2,.answer3,.answer4{
+    height: 5vh;
+    width: 45vw;
+}
+
+}
