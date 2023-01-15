@@ -46,13 +46,12 @@ const fct = (event) =>{
     clearTimeout(timer)
     temps = 30
     audio[i].pause()
-    answer1.innerText === chansonGood[i] ? answer1.classList.add("correct") : answer1.classList.add("wrong")
-    answer2.innerText === chansonGood[i] ? answer2.classList.add("correct") : answer2.classList.add("wrong")
-    answer3.innerText === chansonGood[i] ? answer3.classList.add("correct") : answer3.classList.add("wrong")
-    answer4.innerText === chansonGood[i] ? answer4.classList.add("correct") : answer4.classList.add("wrong")
+    answer1.innerHTML === `<p> ${chansonGood[i]} </p>` ? answer1.classList.add("correct") : answer1.classList.add("wrong")
+    answer2.innerHTML === `<p> ${chansonGood[i]} </p>` ? answer2.classList.add("correct") : answer2.classList.add("wrong")
+    answer3.innerHTML === `<p> ${chansonGood[i]} </p>` ? answer3.classList.add("correct") : answer3.classList.add("wrong")
+    answer4.innerHTML === `<p> ${chansonGood[i]} </p>` ? answer4.classList.add("correct") : answer4.classList.add("wrong")
     image[i].classList.remove("blur")
     image[i].classList.add("noblur")
-    alert(`test 1 ${chansonGood[i]}`)
     if(y===i){
         if(perdu === 0 && bonneReponse(event.target.innerText) && y === i){
             alert("BONNE REPONSE !")
