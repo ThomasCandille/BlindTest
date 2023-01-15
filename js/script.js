@@ -53,7 +53,7 @@ const fct = (event) =>{
     image[i].classList.remove("blur")
     image[i].classList.add("noblur")
     if(y===i){
-        if(perdu === 0 && bonneReponse(event.target.innerText) && y === i){
+        if(perdu === 0 && event.target.classList.contains("correct") && y === i){
             alert("BONNE REPONSE !")
             score = (+updateScore())
             console.log(score)
@@ -61,8 +61,7 @@ const fct = (event) =>{
             
         }
         else{
-            alert(`MAUVAISE REPONSE :(
-                ${answer1.innerHTML} , ${answer2.innerHTML} , ${answer3.innerHTML} , ${answer4.innerHTML} , ${chansonGood[i]}`)
+            alert("MAUVAISE REPONSE :(")
         }
         count_on = 0
         y = y + 1
