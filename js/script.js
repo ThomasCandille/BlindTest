@@ -61,7 +61,8 @@ const fct = (event) =>{
             
         }
         else{
-            alert("MAUVAISE REPONSE :(")
+            alert(`MAUVAISE REPONSE :(
+                ${answer1.innerHTML} , ${answer2.innerHTML} , ${answer3.innerHTML} , ${answer4.innerHTML} , ${chansonGood[i]}`)
         }
         count_on = 0
         y = y + 1
